@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>METHODS OF STRING AND ARRAY</h2>
+    <script>
+        //string functions:-
+
+        let text="Hello World"
+        let text2="I am Arushi!"
+        //length of string
+        console.log(text.length);
+
+        //index of first occurence
+        console.log(text.indexOf("o"));
+       
+        //index of last occurence
+        console.log(text.lastIndexOf("o"))
+
+        //extract part of string
+        console.log(text.slice(2,6))
+
+        //replace specified value with another value
+        console.log(text.replace("world","you"))
+
+        //convert to upper case
+        console.log(text.toUpperCase())
+
+        //convert to lower case
+        console.log(text.toLowerCase())
+
+        //join strings
+        console.log(text.concat(text2));
+
+        //removing whitespaces
+        console.log(text.trim())
+
+        //return character at specific index
+        console.log(text.charAt(4));
+
+        //conversion to array:
+        console.log(text.split(" "))
+
+
+
+       //array functions:
+
+       let arr=["apple","mango","banana"];
+       let arr2=[1,2,3]
+
+       //conversion to strings:
+       console.log(arr.toString())
+
+       //join all array elements to string
+       console.log(arr.join("@"))
+
+       //removing last element
+       console.log(arr.pop())
+
+       //adding new element at the end
+       console.log(arr.push("kiwi"))
+
+       //removing first element and shifting others to lower index
+       console.log(arr.shift())
+
+       //adding new element keeping older elements unshifted
+       console.log(arr.unshift("tomato"))
+
+       //changing elements:
+       arr[0]="melon"
+       console.log(arr)
+
+       //merging two arrays
+       console.log(arr.concat(arr2))
+
+       //slicing out part of array
+       console.log(arr.slice(0,2))
+
+
+    </script>
+    
+</body>
+</html>
